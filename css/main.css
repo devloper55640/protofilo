@@ -1,0 +1,159 @@
+html, body {
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background: #eee;
+    font: 13px/1.6 "Helvetica Neue", helvetica, verdana, arial, sans-serif;
+    color: #666;
+    margin: 0px;
+    overflow-y: scroll;
+    line-height: 21px;
+  }
+  img {
+    max-width: 100%;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: .5rem;
+  }
+  /* Start styling for header areaa*/
+  header {
+      padding-top:10px;
+  }
+  header .container{
+    max-width:940px;
+    max-height: 100px;
+    display: flex;
+    position: relative;
+    border-bottom: 2px solid #7d97ad;
+    height: auto;
+  }
+  header .mylogo {
+    width:40%;
+    float:left;
+  }
+  header .title {
+    width:90%;
+    text-align: right;
+    float: right;
+  }
+  header .title .name{
+    margin-top: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  header .title .job{
+    font-size:15px;
+    font-weight: normal;
+    line-height: 21px;
+    padding-bottom:30px;
+  }
+  header .logo {
+    background: url("../img/logo.png") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: inline-block;
+    width:130px;
+    height:130px;
+  }
+  /* End styling for header area*/
+  h2.heading {
+    text-transform: uppercase;
+    margin: 1.75rem 0;
+    border-bottom: solid 1px #aaa;
+    line-height: 0px;
+    font-weight: normal;
+    color:#627788;
+  }
+  h2.heading span{
+    background: #eee;
+    padding-right:10px;
+  }
+  .container {
+    max-width:980px;
+    margin: 0 auto;
+    padding:10px 20px;
+  }
+  .items {
+    display: flex; 
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+  }
+  .items .w_portofilo {
+    background: #fff;
+    width: 25%;
+    margin-bottom:2%;
+    text-align: center;
+    box-shadow: 0 2px 0 #D9E1E7;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-right:1%;
+    margin-left:1%;
+  }
+  .items .w_portofilo img{
+    border-radius: 3px 3px 0 0;
+  }
+  .items .w_portofilo.text{
+    padding: 1.25rem;
+  }
+  .items .w_portofiloh3 {
+    font-size:18px;
+    color:#444;
+  }
+  footer {
+    max-width:980px;
+    margin:0 auto;
+    padding:10px 20px;
+    text-align: center;
+  }
+  /*Media Queries*/
+/*For devices with width between 600px and 850px*/
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+  header .container{
+    height: 100px;
+  }
+    .items .w_portofilo{
+      width:100%;
+    }
+    .title .name{
+      font-size: 20px;
+     }
+    
+    .items{
+      flex-direction: column;
+     }
+    footer{
+      text-align: center;
+    }
+  }
+  /*For devices with width up to 600px*/    
+@media screen and (max-width: 600px)  {
+     .items{
+      flex-direction: column;
+     }
+     header .container{
+       height: 100px;
+     }
+     .title .name{
+      font-size: 20px;
+      text-align: center;
+     }
+     .title .job{
+       text-align: center;
+     }
+    .items .w_portofilo{
+      width:99%;
+    }
+    footer{
+      text-align: center;
+    }
+  }
+ 
+  
